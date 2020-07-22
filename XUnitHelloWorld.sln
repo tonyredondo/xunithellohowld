@@ -5,6 +5,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "root", "root", "{3E4E1539-D3FD-41D1-B41A-FF040383E08E}"
 ProjectSection(SolutionItems) = preProject
 	Dockerfile = Dockerfile
+	Jenkinsfile = Jenkinsfile
 EndProjectSection
 EndProject
 Global
