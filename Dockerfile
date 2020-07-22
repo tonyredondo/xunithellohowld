@@ -6,5 +6,6 @@ COPY ./XUnitHelloWorld/*.csproj ./XUnitHelloWorld/
 RUN dotnet restore
 COPY . ./
 RUN dotnet build
-ENV DD_TRACE_AGENT_URL=http://host.docker.internal:8126
+#ENV DD_TRACE_AGENT_URL=http://host.docker.internal:8126
+ENV DD_TRACE_AGENT_URL=http://172.17.0.1:8126
 ENTRYPOINT ["/dd-tracer-dotnet/dd-trace.bash", "dotnet", "test"]
