@@ -1,5 +1,10 @@
 pipeline {
-    agent { dockerfile true } 
+    agent { 
+        dockerfile {
+            filename 'Dockerfile'
+            args '--net=host'
+        } 
+    } 
     environment {
        HOME = '/tmp'
     } 
