@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'dotnet test --no-build --logger "console;verbosity=detailed"'
+                sh 'dotnet test --no-build'
                 //sh 'cd /app && /dd-tracer-dotnet/dd-trace.bash dotnet test'
             }
         }
