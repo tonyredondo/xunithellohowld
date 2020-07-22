@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'cd /app && /dd-tracer-dotnet/dd-trace.bash dotnet test'
+                sh 'cd /app && dotnet test'
+                //sh 'cd /app && /dd-tracer-dotnet/dd-trace.bash dotnet test'
             }
         }
     }
